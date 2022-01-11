@@ -9,23 +9,8 @@
 
         <nav>
             <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Home</a>
+                <li v-for="(link, index) in dataShared.navbarLinks" :key="index">
+                    <a :href="link.url">{{link.nome}}</a>
                 </li>
             </ul>
         </nav>
