@@ -1,24 +1,19 @@
 <template>
     <header>
         <a href="#section-1">
-            <img class="logo-img" src="../../assets/images/avada-music-logo.png" alt="Avada Music">
+            <img class="logo-img" src="../../assets/images/avada-music-logo-retina.png" alt="Avada Music">
         </a>
         <div class="ham-btn" v-on:click="dataShared.hamMenuOpen = true">
             <i class="fas fa-bars"></i>
         </div>
-        <Menu v-if="dataShared.hamMenuOpen"/>
     </header>
 </template>
 
 <script>
-import Menu from '../sections/Menu.vue';
 import dataShared from '../../sharing/dataShared';
 
 export default {
     name: 'Header',
-    components: {
-        Menu
-    },
     data() {
         return {
             dataShared,

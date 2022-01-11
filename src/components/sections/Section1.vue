@@ -31,6 +31,8 @@ export default {
         height: 100vh;
         width: 100%;
         background-image: url('../../assets/images/home_slider.jpg');
+        background-size: cover;
+        background-position: center;
         display: flex;
         justify-content: center;
         align-items: center;

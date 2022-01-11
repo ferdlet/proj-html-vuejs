@@ -1,7 +1,7 @@
 <template>
     <section id="ham-menu">
         <div class="header-menu">
-            <img class="logo-img" src="../../assets/images/avada-music-logo.png" alt="Avada Music">
+            <img class="logo-img" src="../../assets/images/avada-music-logo-retina.png" alt="Avada Music">
             <div class="close-btn" v-on:click="dataShared.hamMenuOpen = false">
                 <i class="fas fa-times"></i>
             </div>
@@ -54,8 +54,11 @@ export default {
         height: 100vh;
         background-color: $mandy;
         position: fixed;
+        z-index: 999;
         top: 0;
         left: 0;
+        bottom: 0;
+        right: 0;
         .close-btn {
             color: $white;
             font-size: 3rem;
@@ -78,7 +81,7 @@ export default {
                 list-style: none;
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: space-around;
                 flex-direction: column;
                 height: 80%;
                 li {
