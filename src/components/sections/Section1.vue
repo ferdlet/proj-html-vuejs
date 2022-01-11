@@ -44,8 +44,9 @@ export default {
             font-size: 1.2rem;
             font-style: italic;
         }
-        gap: 60px;
+        gap: 40px;
         .container-btn {
+            margin-top: 10px;
             display: flex;
             gap: 20px;
             a:first-child {

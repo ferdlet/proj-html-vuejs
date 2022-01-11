@@ -78,9 +78,10 @@ export default {
                 list-style: none;
                 display: flex;
                 align-items: center;
+                justify-content: space-between;
                 flex-direction: column;
+                height: 80%;
                 li {
-                    margin-bottom: 50px;
                     a {
                         font-size: 36px;
                         text-decoration: none;
