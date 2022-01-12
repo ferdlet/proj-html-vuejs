@@ -1,5 +1,5 @@
 <template>
-    <header :class="scrolled > 0 ? 'scrolled' : ''">
+    <header :class="dataShared.scrolled > 0 ? 'scrolled' : ''">
         <a href="#section-1">
             <img class="logo-img" src="../../assets/images/avada-music-logo-retina.png" alt="Avada Music">
         </a>
@@ -17,7 +17,6 @@ export default {
     data() {
         return {
             dataShared,
-            scrolled: 0,
         }
     },
     created () {
@@ -26,7 +25,7 @@ export default {
     methods: {
         // rate: 0,
         scroll: function () {
-            this.scrolled = window.pageYOffset;
+            dataShared.scrolled = window.pageYOffset;
         }
     }
 }

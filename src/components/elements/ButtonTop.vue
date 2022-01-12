@@ -1,13 +1,19 @@
 <template>
-    <button v-on:click="scrollTop">
+    <button v-on:click="scrollTop" :class="dataShared.scrolled > 0 ? 'visible' : ''">
         <i class="fas fa-chevron-up"></i>
     </button>
 </template>
 
 <script>
+import dataShared from '../../sharing/dataShared';
 
 export default {
     name: 'ButtonTop',
+    data() {
+        return {
+            dataShared
+        }
+    },
     methods: {
         scrollTop: function topFunction() {
             document.body.scrollTop = 0; // For Safari
@@ -32,9 +38,12 @@ export default {
         color: $white;
         border-radius: 5px 5px 0 0; 
         font-size: 1.2rem;
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
+        &.visible {
+            display: flex;
+        }
     }
 
 

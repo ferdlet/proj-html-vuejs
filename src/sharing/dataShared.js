@@ -2,6 +2,7 @@ import Vue from 'vue';
 
 export default Vue.observable({
     hamMenuOpen: false,
+    scrolled: 0,
     navbarLinks: [
         {
             nome: 'Home',
