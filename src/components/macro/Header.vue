@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header :class="scrolled > 0 ? 'scrolled' : ''">
         <a href="#section-1">
             <img class="logo-img" src="../../assets/images/avada-music-logo-retina.png" alt="Avada Music">
         </a>
@@ -17,8 +17,19 @@ export default {
     data() {
         return {
             dataShared,
+            scrolled: 0,
         }
     },
+    created () {
+        window.addEventListener('scroll', this.scroll);
+    },
+    methods: {
+        // rate: 0,
+        scroll: function () {
+            this.scrolled = window.pageYOffset;
+            console.log('we' + this.scrolled);
+        }
+    }
 }
 </script>
 
@@ -36,6 +47,13 @@ export default {
         left: 0;
         width: 100%;
         background: transparent;
+        &.scrolled {
+            background-color: #1e212b;
+            padding: 0 50px;
+            .logo-img {
+                height: 40px;
+            }
+        }
         .logo-img {
             height: 60px;
         }
