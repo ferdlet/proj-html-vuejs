@@ -51,6 +51,9 @@
                 </ul>
             </div>
         </div>
+        <div class="full-btn">
+            <a href="#">view all live dates</a>
+        </div>
     </section>
 </template>
 
@@ -109,7 +112,7 @@ export default {
                     gap: 10px;
                     li {
                         background-color: $lightgrey;
-                        color: $mandy;
+                        color: $mandyVibrant;
                         padding: 10px 20px;
 
                         cursor: pointer;
@@ -117,6 +120,9 @@ export default {
                             display: flex;
                             align-items: center;
                             gap: 15px;
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight: 700;
+                            letter-spacing: 2px;
                         }
                         .plus-btn {
                             width: 20px;
@@ -144,7 +150,7 @@ export default {
                             display: none;
                         }
                         &:hover .plus-btn {
-                            background-color: $mandy;
+                            background-color: $mandyVibrant;
                         }
                         .text {
                             text-transform: uppercase;
@@ -162,7 +168,7 @@ export default {
                             .g-map {
                                 display: flex;
                                 align-items: center;
-                                max-width: 15%;
+                                max-width: 18%;
                                 img {
                                     width: 100%;
                                 }
@@ -172,21 +178,28 @@ export default {
                                 flex-direction: column;
                                 align-items: flex-start;
                                 justify-content: space-around;
-                                gap: 20px;
+                                gap: 25px;
                                 padding-right: 5%;
                                 .title-date {
                                     color: $white;
+                                    font-family: 'Montserrat', sans-serif;
                                 }
                                 p {
                                     color: $textgrey;
                                     line-height: 26px;
+                                    font-family: 'Merriweather', serif;
                                 }
                                 a {
                                     text-decoration: none;
                                     display: inline-block;
-                                    padding: 8px 20px;
+                                    padding: 10px 20px;
                                     color: $white;
-                                    background-color: $mandy;
+                                    font-size: 0.8rem;
+                                    background-color: $mandyVibrant;
+                                    font-weight: 600;
+                                    font-family: 'Merriweather', sans-serif;
+                                    text-transform: uppercase;
+                                    letter-spacing: 2px;
                                     &:hover {
                                         color: black;
                                         background-color: white;
@@ -196,7 +209,7 @@ export default {
                         }
                     }
                     li.active .plus-btn {
-                        background-color: $mandy;
+                        background-color: $mandyVibrant;
                         .plus {
                             display: none;
                         }
@@ -207,6 +220,24 @@ export default {
                 }
             }
         }
+    }
+    .full-btn {
+        width: 100%;
+        a {
+            background-color: $mandy;
+            height: 100%;
+            padding: 35px 0;
+            text-align: center;
+            display: block;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $white;
+            &:hover {
+                color: black;
+                background-color: white;
+            }
+        }
+
     }
    
 </style>
