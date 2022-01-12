@@ -131,19 +131,17 @@ export default {
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            .hyphen {
-                                display: none;
+                            > span {
                                 font-weight: bold;
                                 height: 100%;
                                 width: 100%;
                                 text-align: center;
                             }
+                            .hyphen {
+                                display: none;
+                            }
                             .plus {
                                 display: inline;
-                                font-weight: bold;
-                                height: 100%;
-                                width: 100%;
-                                text-align: center;
                             }
                         }
                         .info-date {

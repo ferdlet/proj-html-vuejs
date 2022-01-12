@@ -53,5 +53,28 @@ export default Vue.observable({
             data: '26/08/2022',
             nome: 'jova beach party 2022 - castel volturno, caserta',
         },
+    ],
+    socials: [
+        {
+            nome: 'Facebook',
+            url: '#',
+            icon: 'fab fa-facebook-f'
+        },
+        {
+            nome: 'Twitter',
+            url: '#',
+            icon: 'fab fa-twitter'
+        },
+        {
+            nome: 'Instagram',
+            url: '#',
+            icon: 'fab fa-instagram'
+        },
+        {
+            nome: 'YouTube',
+            url: '#',
+            icon: 'fab fa-youtube'
+        },
+
     ]
 });

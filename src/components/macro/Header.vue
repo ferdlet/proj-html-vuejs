@@ -27,7 +27,6 @@ export default {
         // rate: 0,
         scroll: function () {
             this.scrolled = window.pageYOffset;
-            console.log('we' + this.scrolled);
         }
     }
 }

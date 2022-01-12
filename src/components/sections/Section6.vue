@@ -3,26 +3,19 @@
         <a href="#">
             <img class="logo-img" src="../../assets/images/logo_footer.png" alt="Avada Music">
         </a>
-        <nav>
-            <ul>
-                <li v-for="(link, index) in dataShared.navbarLinks" :key="index">
-                    <a :href="link.url">{{link.nome}}</a>
-                </li>
-            </ul>
-        </nav>
+        <NavbarFooter/>
   </section>
 </template>
 
 <script>
-import dataShared from '../../sharing/dataShared';
+import NavbarFooter from '../elements/NavbarFooter.vue'
 
 export default {
     name: 'Section6',
-        data() {
-        return {
-            dataShared,
-        }
+    components: {
+        NavbarFooter
     }
+
 }
 </script>
 
@@ -34,26 +27,9 @@ export default {
         justify-content: space-between;
         align-items: center;
         background-color: $lightgrey;
-        padding: 30px;
+        padding: 50px;
         .logo-img {
             height: 40px;
-        }
-        nav {
-            ul {
-                display: flex;
-                gap: 20px;
-                list-style: none;
-                li a {
-                    text-decoration: none;
-                    color: $textgrey;
-                    font-family: 'Merriweather', serif;
-                    font-size: 0.8rem;
-
-                }
-                li:first-child a {
-                    color: $white;
-                }
-            }
         }
     }
 </style>
