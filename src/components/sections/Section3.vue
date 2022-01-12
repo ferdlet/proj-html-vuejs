@@ -50,7 +50,7 @@ export default {
             flex-direction: column;
             align-items: center;
             width: 60vw;
-            gap: 25px;
+            gap: 30px;
             h2 {
                 font-size: 4rem;
                 color: $white;

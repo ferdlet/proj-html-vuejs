@@ -31,10 +31,11 @@ export default {
         justify-content: space-between;
         padding: 20px 50px;
         position: fixed;
+        z-index: 999;
         top: 0;
         left: 0;
         width: 100%;
-        background: none;
+        background: transparent;
         .logo-img {
             height: 60px;
         }
@@ -45,5 +46,6 @@ export default {
                 color: $white;
             }
         }
+       
     }
 </style>
