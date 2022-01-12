@@ -5,7 +5,7 @@ export default Vue.observable({
     navbarLinks: [
         {
             nome: 'Home',
-            url: '#'
+            url: '#section-1'
         },
         {
             nome: 'Meet The Band',
@@ -13,11 +13,11 @@ export default Vue.observable({
         },
         {
             nome: 'Live Dates',
-            url: '#'
+            url: '#section-5'
         },
         {
             nome: 'Latest News',
-            url: '#'
+            url: '#section-3'
         },
         {
             nome: 'Albums',
