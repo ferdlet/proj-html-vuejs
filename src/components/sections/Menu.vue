@@ -1,7 +1,9 @@
 <template>
     <section id="ham-menu">
         <div class="header-menu">
-            <img class="logo-img" src="../../assets/images/avada-music-logo-retina.png" alt="Avada Music">
+            <a v-on:click="dataShared.hamMenuOpen = false" href="#">
+                <img class="logo-img" src="../../assets/images/avada-music-logo-retina.png" alt="Avada Music">
+            </a>
             <div class="close-btn" v-on:click="dataShared.hamMenuOpen = false">
                 <i class="fas fa-times"></i>
             </div>
@@ -10,7 +12,7 @@
         <nav>
             <ul>
                 <li v-for="(link, index) in dataShared.navbarLinks" :key="index">
-                    <a :href="link.url">{{link.nome}}</a>
+                    <a v-on:click="dataShared.hamMenuOpen = false" :href="link.url">{{link.nome}}</a>
                 </li>
             </ul>
         </nav>
@@ -47,6 +49,7 @@ export default {
         .close-btn {
             color: $white;
             font-size: 3rem;
+            cursor: pointer;
         }
         .header-menu {
             display: flex;

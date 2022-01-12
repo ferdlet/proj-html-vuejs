@@ -60,6 +60,7 @@ export default {
             .fa-bars {
                 font-size: 1.8rem;
                 color: $white;
+                cursor: pointer;
             }
         }
        
