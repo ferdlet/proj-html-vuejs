@@ -2,14 +2,14 @@
   <div id="app">
     <Header/>
     <ButtonTop/>
-    <Menu v-if="dataShared.hamMenuOpen"/>
+    <HamMenu v-if="dataShared.hamMenuOpen"/>
     <Main/>
     <Footer/>
   </div>   
 </template>
 
 <script>
-import Menu from './components/sections/Menu.vue'
+import HamMenu from './components/elements/HamMenu.vue'
 import ButtonTop from './components/elements/ButtonTop.vue'
 import Header from './components/macro/Header.vue'
 import Main from './components/macro/Main.vue'
@@ -22,7 +22,7 @@ export default {
   components: {
     Header,
     ButtonTop,
-    Menu,
+    HamMenu,
     Main,
     Footer
   },

@@ -1,37 +1,41 @@
 <template>
     <section id="section-3">
-        <div class="content-container">
-            <h2>
-                Latest Band News
-            </h2>
-            <hr>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis delectus, fugiat numquam eius enim consequatur officia exercitationem, harum illum accusantium magni sint.
-            </p>
-        </div>
-        <div class="container-articles">
+       <TitleSection :titleSection="titleSection"/>
+        <div class="container articles">
 
             <CardArticle v-for="(article, index) in dataShared.articles" :key="index" :article="article"/>
 
         </div>
 
-        <div class="full-btn">
-            <a href="#">view all latest news</a>
-        </div>
+        <FullButton :linkFullButton="linkFullButton"/>
+
     </section>
 </template>
 
 <script>
-import dataShared from '../../sharing/dataShared';
+import dataShared from '../../sharing/dataShared'
 import CardArticle from '../elements/CartArticle.vue'
+import TitleSection from '../elements/TitleSection.vue'
+import FullButton from '../elements/FullButton.vue'
+
 export default {
     name: 'Section3',
     components: {
-        CardArticle
+        CardArticle,
+        TitleSection,
+        FullButton
     },
     data() {
         return {
-            dataShared
+            dataShared,
+            titleSection: {
+                title: 'Latest Band News',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis delectus, fugiat numquam eius enim consequatur officia exercitationem, harum illum accusantium magni sint.'
+            },
+            linkFullButton: {
+                url: '#',
+                title: 'view all latest news'
+            }
         }
     },
 }
@@ -46,28 +50,8 @@ export default {
         align-items: center;
         flex-direction: column;
 
-        .content-container {
-            text-align: center;
-            padding: 50px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 60vw;
-            gap: 30px;
-            h2 {
-                font-size: 4rem;
-                color: $white;
-            }
-            hr {
-                width: 20vw;
-                color: $spacebar;
-            }
-            p {
-                color: $textgrey;
-            }
-        }
-        .container-articles {
-            width: 80vw;
+
+        .container.articles {
             padding-bottom: 70px;
             padding-top: 20px;
             display: grid;
@@ -81,7 +65,7 @@ export default {
 
         }
         @media screen and (min-width: 992px){
-            .container-articles {
+            .container.articles {
                 width: 70vw;
                 grid-template-rows: 360px 360px 360px 360px;
             }
@@ -111,24 +95,7 @@ export default {
 
         }
 
-        .full-btn {
-            width: 100%;
-            a {
-                background-color: $mandy;
-                height: 100%;
-                padding: 35px 0;
-                text-align: center;
-                display: block;
-                text-transform: uppercase;
-                text-decoration: none;
-                color: $white;
-                &:hover {
-                    color: black;
-                    background-color: white;
-                }
-            }
-
-        }
+        
 
     }
 

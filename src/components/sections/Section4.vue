@@ -29,7 +29,6 @@ export default {
         background-attachment: fixed;
         background-repeat: no-repeat;
         .content-container {
-            width: 60vw;
             margin: 0 auto;
             padding: 50px;
             display: flex;

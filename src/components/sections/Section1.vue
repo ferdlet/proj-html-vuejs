@@ -7,10 +7,10 @@
             There is an untold story behind every favorite song.
         </p>
         <div class="container-btn">
-            <a href="#">
+            <a class="button-hover" href="#">
                 Latest Album
             </a>
-            <a href="#">
+            <a class="button-hover" href="#">
                 live dates
             </a>
         </div>
@@ -66,11 +66,7 @@ export default {
                 border: 1px solid $white;
                 font-size: 1rem;
             }
-            a:hover {
-                border: 1px solid black;
-                color: black;
-                background-color: white;
-            }
+
         }
     }
 

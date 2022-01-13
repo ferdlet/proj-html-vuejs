@@ -43,6 +43,7 @@ export default {
             .title {
                 color: $mandy;
                 margin-bottom: 10px;
+                font-size: 1.1rem;
             }
             .description {
                 color: $textgrey;
