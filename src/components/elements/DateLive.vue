@@ -17,18 +17,19 @@
         <div class="info-date">
             <div class="g-map">
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.8087837663015!2d14.325004515648715!3d41.0731722233775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133a55b22aed1333%3A0xc79c020a24847245!2sReggia%20di%20Caserta!5e0!3m2!1sit!2sit!4v1642077076182!5m2!1sit!2sit" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe :src="dataShared.dates[index].srcMap" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
 
             </div>
             <div class="text-date">
                 <h4 class="title-date">
-                    Untold Stories
+                    {{dataShared.dates[index].title}}
                 </h4>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae aliquid voluptatem, ullam quo sapiente, repellendus architecto debitis magni cupiditate velit illo officiis culpa mollitia quos et eos fugit? Expedita.
+                    {{dataShared.dates[index].description}}
+
                 </p>
-                <a class="button-hover" href="#">Book Now</a>
+                <a class="button-hover" :target="dataShared.dates[index].target ? dataShared.dates[index].target : ''" :href="dataShared.dates[index].urlBooking">Book Now</a>
             </div>
         </div>
 
@@ -111,7 +112,7 @@ export default {
             .g-map {
                 display: flex;
                 align-items: center;
-                width: 35%;
+                width: 40%;
                 > * {
                     width: 100%;
                     height: 200px;

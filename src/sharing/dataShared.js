@@ -84,26 +84,51 @@ export default Vue.observable({
         {
             data: '17/08/2020',
             nome: 'gem festival 2020 anakalia, georgia',
+            title: 'Untold Stories',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae aliquid voluptatem, ullam quo sapiente, repellendus architecto debitis magni cupiditate velit illo officiis culpa mollitia quos et eos fugit? Expedita.',
+            urlBooking: '#',
+            srcMap: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.8087837663015!2d14.325004515648715!3d41.0731722233775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133a55b22aed1333%3A0xc79c020a24847245!2sReggia%20di%20Caserta!5e0!3m2!1sit!2sit!4v1642077076182!5m2!1sit!2sit'
         },
         {
             data: '24/09/2020',
             nome: 'groovefest domninical republic',
+            title: 'Untold Stories',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae aliquid voluptatem, ullam quo sapiente, repellendus architecto debitis magni cupiditate velit illo officiis culpa mollitia quos et eos fugit? Expedita.',
+            urlBooking: '#',
+            srcMap: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.8087837663015!2d14.325004515648715!3d41.0731722233775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133a55b22aed1333%3A0xc79c020a24847245!2sReggia%20di%20Caserta!5e0!3m2!1sit!2sit!4v1642077076182!5m2!1sit!2sit'
         },
         {
             data: '31/10/2020',
             nome: 'oasis festival 2020 marrakech, marocco',
+            title: 'Untold Stories',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae aliquid voluptatem, ullam quo sapiente, repellendus architecto debitis magni cupiditate velit illo officiis culpa mollitia quos et eos fugit? Expedita.',
+            urlBooking: '#',
+            srcMap: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.8087837663015!2d14.325004515648715!3d41.0731722233775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133a55b22aed1333%3A0xc79c020a24847245!2sReggia%20di%20Caserta!5e0!3m2!1sit!2sit!4v1642077076182!5m2!1sit!2sit'
         },
         {
             data: '07/11/2020',
             nome: 'moga festival - essaouria, marocco',
+            title: 'Untold Stories',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae aliquid voluptatem, ullam quo sapiente, repellendus architecto debitis magni cupiditate velit illo officiis culpa mollitia quos et eos fugit? Expedita.',
+            urlBooking: '#',
+            srcMap: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.8087837663015!2d14.325004515648715!3d41.0731722233775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133a55b22aed1333%3A0xc79c020a24847245!2sReggia%20di%20Caserta!5e0!3m2!1sit!2sit!4v1642077076182!5m2!1sit!2sit'
         },
         {
             data: '10/12/2020',
             nome: 'envision festival - uvita, costa rica',
+            title: 'Untold Stories',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae aliquid voluptatem, ullam quo sapiente, repellendus architecto debitis magni cupiditate velit illo officiis culpa mollitia quos et eos fugit? Expedita.',
+            urlBooking: '#',
+            srcMap: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.8087837663015!2d14.325004515648715!3d41.0731722233775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133a55b22aed1333%3A0xc79c020a24847245!2sReggia%20di%20Caserta!5e0!3m2!1sit!2sit!4v1642077076182!5m2!1sit!2sit'
         },
         {
             data: '26/08/2022',
             nome: 'jova beach party 2022 - castel volturno, caserta',
+            title: 'Jova Beach Party 2022 - Castel Volturno, Caserta',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae aliquid voluptatem, ullam quo sapiente, repellendus architecto debitis magni cupiditate velit illo officiis culpa mollitia quos et eos fugit? Expedita.',
+            urlBooking: 'https://www.ticketone.it/event/jova-beach-party-2022-lido-fiore-flava-beach-14482845/',
+            srcMap: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.622858746695!2d13.962594515413493!3d40.98973847930275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b196993041bcf%3A0xa887a39342fdd5cf!2sFlava%20Beach%20-%20Lido%20Fiore!5e0!3m2!1sit!2sit!4v1642078223892!5m2!1sit!2sit',
+            target: '_blank',
         },
     ],
     socials: [
