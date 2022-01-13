@@ -80,7 +80,8 @@ export default {
         }
         .container-articles {
             width: 80vw;
-            margin: 20px auto;
+            padding-bottom: 70px;
+            padding-top: 20px;
             display: grid;
             grid-template-areas: 
             'article0 article0 article1'
