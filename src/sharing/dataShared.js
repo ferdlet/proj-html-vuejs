@@ -40,37 +40,43 @@ export default Vue.observable({
             title: 'Technology and music',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae aliquid voluptatem, ullam quo sapiente, repellendus architecto debitis magni cupiditate velit.',
             url: '#',
-            image: 'blog_music_techo.jpg'
+            image: 'blog_music_techo.jpg',
+            id: 0,
         },
         {
             title: 'Taking it back to the old school',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae aliquid voluptatem, ullam quo sapiente, repellendus architecto debitis magni cupiditate velit.',
             url: '#',
-            image: 'blog-post1.jpg'
+            image: 'blog-post1.jpg',
+            id: 1,
         },
         {
             title: 'Sharing the stage with a legend',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae aliquid voluptatem, ullam quo sapiente, repellendus architecto debitis magni cupiditate velit.',
             url: '#',
-            image: 'blog-post2.jpg'
+            image: 'blog-post2.jpg',
+            id: 2,
         },
         {
             title: 'While my guitar gently weeps',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae aliquid voluptatem, ullam quo sapiente, repellendus architecto debitis magni cupiditate velit.',
             url: '#',
-            image: 'blog-post3.jpg'
+            image: 'blog-post3.jpg',
+            id: 3,
         },
         {
             title: 'It just sounds better',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae aliquid voluptatem, ullam quo sapiente, repellendus architecto debitis magni cupiditate velit.',
             url: '#',
-            image: 'blog-post4.jpg'
+            image: 'blog-post4.jpg',
+            id: 4,
         },
         {
             title: 'The flavor of rock',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae aliquid voluptatem, ullam quo sapiente, repellendus architecto debitis magni cupiditate velit.',
             url: '#',
-            image: 'blog_flavor_rock.jpg'
+            image: 'blog_flavor_rock.jpg',
+            id: 5,
         },
     ],
     dates: [

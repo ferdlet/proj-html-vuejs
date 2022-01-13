@@ -5,7 +5,9 @@
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat magni nostrum rerum sint itaque qui voluptas! Dignissimos autem quibusdam accusantium quis laborum, omnis nostrum adipisci fugit esse, recusandae, explicabo iure.
                 Quae nostrum tenetur soluta, nisi voluptate minima quibusdam facere illum itaque in, quidem architecto vel, fugit perferendis. Porro expedita fugit cupiditate consectetur."
             </p>
-            <img src="../../assets/images/band_interview_play_icon.png" alt="Play Button">
+            <a href="#">
+                <img src="../../assets/images/band_interview_play_icon.png" alt="Play Button">
+            </a>
         </div>
   </section>
 </template>
