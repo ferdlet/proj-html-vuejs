@@ -1,5 +1,5 @@
 <template>
-  <section id="section-6">
+  <section id="section-4">
         <div class="content-container">
             <p>
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat magni nostrum rerum sint itaque qui voluptas! Dignissimos autem quibusdam accusantium quis laborum, omnis nostrum adipisci fugit esse, recusandae, explicabo iure.
@@ -14,14 +14,14 @@
 
 <script>
 export default {
-    name: 'Section6'
+    name: 'Section4'
 }
 </script>
 
 <style lang="scss" scoped> 
     @import '../../assets/style/_variables.scss';
 
-    #section-6{
+    #section-4{
         background-image: url('../../assets/images/home-testimonial-parallax.jpg');
         padding: 150px 0;
         background-position: center;

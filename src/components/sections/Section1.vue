@@ -10,7 +10,7 @@
             <a class="button-hover" href="#">
                 Latest Album
             </a>
-            <a class="button-hover" href="#">
+            <a class="button-hover" href="#section-5">
                 live dates
             </a>
         </div>
