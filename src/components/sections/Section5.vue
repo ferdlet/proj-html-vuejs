@@ -75,8 +75,8 @@ export default {
     @import '../../assets/style/_variables.scss';
     
     #section-5 {
+        background-color: $darkgrey;
         .live-dates {
-            background-color: $darkgrey;
             .content-container {
                 text-align: center;
                 padding: 50px;
@@ -100,7 +100,6 @@ export default {
             }
         }
         .dates {
-            background-color: $darkgrey;
             padding-bottom: 60px;
             .container {
                 width: 80vw;

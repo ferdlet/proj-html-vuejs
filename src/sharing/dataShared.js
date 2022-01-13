@@ -6,28 +6,72 @@ export default Vue.observable({
     navbarLinks: [
         {
             nome: 'Home',
-            url: '#section-1'
+            url: '#section-1',
+            active: true
         },
         {
             nome: 'Meet The Band',
-            url: '#'
+            url: '#',
+            active: false
         },
         {
             nome: 'Live Dates',
-            url: '#section-5'
+            url: '#section-5',
+            active: false
         },
         {
             nome: 'Latest News',
-            url: '#section-3'
+            url: '#section-3',
+            active: false
         },
         {
             nome: 'Albums',
-            url: '#'
+            url: '#',
+            active: false
         },
         {
             nome: 'Fans',
-            url: '#'
+            url: '#',
+            active: false
         }
+    ],
+    articles: [
+        {
+            title: 'Technology and music',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae aliquid voluptatem, ullam quo sapiente, repellendus architecto debitis magni cupiditate velit.',
+            url: '#',
+            image: 'blog_music_techo.jpg'
+        },
+        {
+            title: 'Taking it back to the old school',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae aliquid voluptatem, ullam quo sapiente, repellendus architecto debitis magni cupiditate velit.',
+            url: '#',
+            image: 'blog-post1.jpg'
+        },
+        {
+            title: 'Sharing the stage with a legend',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae aliquid voluptatem, ullam quo sapiente, repellendus architecto debitis magni cupiditate velit.',
+            url: '#',
+            image: 'blog-post2.jpg'
+        },
+        {
+            title: 'While my guitar gently weeps',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae aliquid voluptatem, ullam quo sapiente, repellendus architecto debitis magni cupiditate velit.',
+            url: '#',
+            image: 'blog-post3.jpg'
+        },
+        {
+            title: 'It just sounds better',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae aliquid voluptatem, ullam quo sapiente, repellendus architecto debitis magni cupiditate velit.',
+            url: '#',
+            image: 'blog-post4.jpg'
+        },
+        {
+            title: 'The flavor of rock',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae aliquid voluptatem, ullam quo sapiente, repellendus architecto debitis magni cupiditate velit.',
+            url: '#',
+            image: 'blog_flavor_rock.jpg'
+        },
     ],
     dates: [
         {

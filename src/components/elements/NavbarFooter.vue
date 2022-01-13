@@ -1,7 +1,7 @@
 <template>
     <nav>
         <ul>
-            <li v-for="(link, index) in dataShared.navbarLinks" :key="index">
+            <li v-for="(link, index) in dataShared.navbarLinks" :key="index" :class="link.active ? 'active' : ''">
                 <a :href="link.url">{{link.nome}}</a>
             </li>
         </ul>
@@ -34,9 +34,8 @@ export default {
                 color: $textgrey;
                 font-family: 'Merriweather', serif;
                 font-size: 0.8rem;
-
             }
-            li:first-child a {
+            li.active a {
                 color: $white;
             }
         }

@@ -9,16 +9,19 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis delectus, fugiat numquam eius enim consequatur officia exercitationem, harum illum accusantium magni sint.
             </p>
         </div>
-        <div class="container">
-            <div class="card1">1</div>
-            <div class="card2">2</div>
+        <div class="container-articles">
 
-            <div class="card3">3</div>
-            <div class="card4">4</div>
-            <div class="card5">5</div>
-
-            <div class="card6">6</div>    
-
+            <div v-for="(article, index) in dataShared.articles" :key="index" :class="'article' + index">
+                <img :src="require('../../assets/images/' + article.image)" :alt="article.image">
+                <div class="title-article">
+                    <h4 class="title">
+                        {{article.title}}
+                    </h4>
+                    <p class="description">
+                        {{article.description}}
+                    </p>
+                </div>
+            </div>
 
         </div>
 
@@ -29,8 +32,15 @@
 </template>
 
 <script>
+import dataShared from '../../sharing/dataShared';
+
 export default {
     name: 'Section3',
+    data() {
+        return {
+            dataShared
+        }
+    },
 }
 </script>
 
@@ -63,12 +73,74 @@ export default {
                 color: $textgrey;
             }
         }
-        .container {
-            width: 80%;
-            margin: 20px 0;
-
-            
+        .container-articles {
+            width: 80vw;
+            margin: 20px auto;
+            display: grid;
+            grid-template-areas: 
+            'article0 article0 article1'
+            'article3 article4 article1'
+            'article3 article4 article2'
+            'article5 article5 article2';
+            grid-gap: 20px;
+            grid-template-rows: 300px 300px 300px 300px;
+            > div {
+                overflow: hidden;
+                position: relative;
+                background: chartreuse;
+                .title-article {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    background-color: $lightgrey;
+                    padding: 15px;
+                    .title {
+                        color: $mandy;
+                        margin-bottom: 10px;
+                    }
+                    .description {
+                        color: $textgrey;
+                    }
+                }
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    display: block;
+                }
+            }
+            .article0 {
+                grid-area: article0;
+                
+            }            
+            .article1 {
+                grid-area: article1;
+               
+            }
+            .article2 {
+                grid-area: article2;
+                
+            }
+            .article3 {
+                grid-area: article3;
+                
+            }
+            .article4 {
+                grid-area: article4;
+               
+            }
+            .article5 {
+                grid-area: article5;
+                
+            }
         }
+        @media screen and (min-width: 992px){
+                .container-articles {
+                    width: 60vw;
+                    // grid-template-rows: 300px 300px 300px 300px;
+                }
+            }
         .full-btn {
             width: 100%;
             a {

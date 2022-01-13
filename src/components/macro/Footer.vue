@@ -45,11 +45,11 @@ export default {
         justify-content: space-between;
         align-items: center;
         background-color: $darkgrey;
-        padding: 40px;
+        padding: 50px;
         .copyright {
             color: $textgrey;
             font-family: 'Merriweather', sans-serif;
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             letter-spacing: 1px;
             font-weight: 600;
             span {
@@ -61,7 +61,6 @@ export default {
             }
         }
         .social-icon {
-            
             list-style: none;
             display: flex;
             gap: 15px;
