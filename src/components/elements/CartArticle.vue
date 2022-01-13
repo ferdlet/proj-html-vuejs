@@ -73,7 +73,7 @@ export default {
                 align-items: center;
                 text-decoration: none;
                 color: white;
-                font-size: 1.4rem;
+                font-size: 1.5rem;
                 padding: 20px;
                 text-align: center;
             }

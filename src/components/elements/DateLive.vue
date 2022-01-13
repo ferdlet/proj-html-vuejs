@@ -70,23 +70,24 @@ export default {
             letter-spacing: 2px;
         }
         .plus-btn {
-            width: 20px;
-            height: 20px;
+            width: 25px;
+            height: 25px;
             color: $white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            text-align: center;
+            line-height: 25px;
             > span {
-                font-weight: bold;
-                height: 100%;
+                line-height: 25px;
                 width: 100%;
-                text-align: center;
+                height: 100%;
+                font-weight: bold;
+                letter-spacing: 0;
+                font-size: 1.2rem;
             }
             .hyphen {
                 display: none;
             }
             .plus {
-                display: inline;
+                display: block;
             }
         }
         .info-date {
@@ -165,7 +166,7 @@ export default {
             display: none;
         }
         .hyphen {
-            display: inline;
+            display: block;
         }
     }
 </style>

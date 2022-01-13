@@ -47,6 +47,8 @@ a {
 .button-hover:hover {
     color: black !important;
     background-color: white !important;
+    transition: color 0.2s linear;
+    transition: background-color 0.2s linear;
 }
 
 // **********

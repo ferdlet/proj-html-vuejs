@@ -40,6 +40,7 @@ export default {
         align-items: center;
         flex-direction: column;
         color: $white;
+        text-align: center;
         h1 {
             font-size: 140px;
             font-family: "Montserrat";
