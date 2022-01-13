@@ -2,9 +2,9 @@
     <div class="article" :class="'article' + article.id">
         <img :src="require('../../assets/images/' + article.image)" :alt="article.image">
         <div class="title-article">
-            <h4 class="title">
+            <h6 class="title">
                 {{article.title}}
-            </h4>
+            </h6>
             <p class="description">
                 {{article.description}}
             </p>
@@ -43,7 +43,6 @@ export default {
             .title {
                 color: $mandy;
                 margin-bottom: 10px;
-                font-size: 1.1rem;
             }
             .description {
                 color: $textgrey;
@@ -58,8 +57,14 @@ export default {
             left: 0;
             height: 100%;
             width: 100%;
-            background: rgba($color: $mandy, $alpha: 0.6);
+            background: rgba($color: $mandy, $alpha: 0.7);
             z-index: 10;
+            animation-name: leftToRight;
+            animation-duration: 0.3s;
+            @keyframes leftToRight {
+                from {width: 0;}
+                to {width: 100%;}
+            }
             a {
                 width: 100%;
                 height: 100%;

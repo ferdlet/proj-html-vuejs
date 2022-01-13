@@ -15,10 +15,9 @@
             </div>
         </div>
         <div class="info-date">
-            <div class="g-map">
+            <div class="g-maps">
 
                 <iframe :src="dataShared.dates[index].srcMap" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
 
             </div>
             <div class="text-date">
@@ -109,14 +108,22 @@ export default {
             padding: 10px 0;
             display: flex;
             gap: 40px;
-            .g-map {
+            .g-maps {
                 display: flex;
                 align-items: center;
                 width: 40%;
+                min-width: 200px;
+                min-height: 100px;
                 > * {
                     width: 100%;
-                    height: 200px;
+                    height: 100%;
                 }
+            }
+            @media screen and (min-width: 992px) {
+                .g-maps {
+                    min-height: 200px;
+                    min-width: 300px;
+                } 
             }
             .text-date {
                 display: flex;
@@ -139,10 +146,9 @@ export default {
                     display: inline-block;
                     padding: 10px 20px;
                     color: $white;
-                    font-size: 0.8rem;
                     background-color: $mandyVibrant;
                     font-weight: 600;
-                    font-family: 'Merriweather', sans-serif;
+                    font-family: 'Montserrat', sans-serif;
                     text-transform: uppercase;
                     letter-spacing: 2px;
                     &:hover {

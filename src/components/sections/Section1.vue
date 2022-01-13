@@ -3,9 +3,9 @@
         <h1>
             Untold Stories
         </h1>
-        <p>
+        <h4>
             There is an untold story behind every favorite song.
-        </p>
+        </h4>
         <div class="container-btn">
             <a class="button-hover" href="#">
                 Latest Album
@@ -41,11 +41,12 @@ export default {
         flex-direction: column;
         color: $white;
         h1 {
-            font-size: 5rem;
+            font-size: 140px;
+            font-family: "Montserrat";
 
         }
-        p {
-            font-size: 1.2rem;
+        h4 {
+            font-family: "Merriweather";
             font-style: italic;
         }
         gap: 40px;
@@ -62,9 +63,12 @@ export default {
                 text-decoration: none;
                 color: $white;
                 display: inline-block;
-                padding: 10px 25px;
+                padding: 15px 30px;
                 border: 1px solid $white;
-                font-size: 1rem;
+                font-size: 1.1rem;
+                font-family: "Montserrat";
+                font-weight: 700;
+
             }
 
         }

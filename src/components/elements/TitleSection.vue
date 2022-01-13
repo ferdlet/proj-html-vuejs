@@ -31,8 +31,9 @@ export default {
         gap: 30px;
         margin: 0 auto;
         h2 {
-            font-size: 4rem;
             color: $white;
+            font-family: "Montserrat";
+            font-family: "Merriweather";
         }
         hr {
             width: 20vw;

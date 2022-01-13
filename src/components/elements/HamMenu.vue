@@ -12,7 +12,7 @@
         <nav>
             <ul>
                 <li v-for="(link, index) in dataShared.navbarLinks" :key="index">
-                    <a v-on:click="dataShared.hamMenuOpen = false" :href="link.url">{{link.nome}}</a>
+                    <a v-on:click="dataShared.hamMenuOpen = false" :href="link.url" :class="link.active ? 'active' : ''">{{link.nome}}</a>
                 </li>
             </ul>
         </nav>
@@ -74,9 +74,17 @@ export default {
                 height: 80%;
                 li {
                     a {
-                        font-size: 36px;
+                        font-size: 2.5rem;
+                        font-family: 'Montserrat';
                         text-decoration: none;
-                        color: $white;
+                        color: rgba($color: #fff, $alpha: 0.5);
+                    }
+                    a:hover {
+                        color: white;
+                        transition: color 0.3s linear;
+                    }
+                    a.active {
+                        color: white;
                     }
                 }
             }

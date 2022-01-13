@@ -23,12 +23,16 @@ export default {
         a {
             background-color: $mandy;
             height: 100%;
-            padding: 35px 0;
+            padding: 50px 0;
             text-align: center;
             display: block;
             text-transform: uppercase;
             text-decoration: none;
             color: $white;
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
         }
     }
 </style>

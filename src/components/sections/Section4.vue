@@ -38,8 +38,10 @@ export default {
                 color: $white;
                 text-align: center;
                 font-style: italic;
-                line-height: 30px;
-                font-size: 1.2rem;
+                line-height: 45px;
+                font-size: 1.4rem;
+                letter-spacing: 1.2px;
+                font-family: 'Merriweather';
             }
             img {
                 height: 60px;
