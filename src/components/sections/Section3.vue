@@ -21,6 +21,11 @@
                         {{article.description}}
                     </p>
                 </div>
+                <div class="article-hover">
+                    <a href="#">
+                        {{article.title}}
+                    </a>
+                </div>
             </div>
 
         </div>
@@ -95,12 +100,35 @@ export default {
                     width: 100%;
                     background-color: $lightgrey;
                     padding: 15px;
+                    z-index: 9;
                     .title {
                         color: $mandy;
                         margin-bottom: 10px;
                     }
                     .description {
                         color: $textgrey;
+                    }
+                }
+                &:hover .title-article {
+                    display: none;
+                }
+                &:hover .article-hover {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    background: rgba($color: $mandy, $alpha: 0.6);
+                    z-index: 10;
+                    a {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+                        color: white;
+                        font-size: 1.4rem;
                     }
                 }
                 img {
