@@ -49,7 +49,14 @@ export default {
             }
         }
         &:hover .title-article {
-            display: none;
+            // display: none;
+            transform: translateY(100%);
+            animation-name: topToBottom;
+            animation-duration: 0.3s;
+            @keyframes topToBottom {
+                from {transform: translateY(0);}
+                to {transform: translateY(100%);}
+            }
         }
         &:hover .article-hover {
             position: absolute;
