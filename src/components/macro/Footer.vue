@@ -6,7 +6,7 @@
                 <i class="far fa-copyright"></i> 
                 Copyright 2012 - 2022 | 
                 <span>
-                    avada theme by <a href="#">themefusion</a> | all rights reserved | powered by <a href="#">wordpress</a>
+                    Inspired by avada theme by <a href="#">themefusion</a> | all rights reserved | powered by <a href="#">wordpress</a> | developed by <a href="https://github.com/ferdlet">Ferdinando Letizia</a>
                 </span>
             </div>
             <ul class="social-icon">
